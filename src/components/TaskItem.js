@@ -7,7 +7,7 @@ const TaskItem = ({ todo }) => {
 
     const dispatch = useDispatch();
     return (
-        <div>
+        <div className="task">
             <h1 className={todo.isDone ? "Done" : "none"}>{todo.task}</h1>
             <button onClick={() => dispatch(completeTodo(todo.id))}>{todo.isDone ? "Undo" : "Complete"}</button>
             <button onClick={() => dispatch(deleteTodo(todo.id))}>Delete</button>

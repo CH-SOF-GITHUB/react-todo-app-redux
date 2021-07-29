@@ -15,7 +15,7 @@ export const completeTodo = (idTask) => ({
     payload: idTask
 })
 
-export const editTask = ({idTask, value}) => ({
+export const editTask = (idTask, value) => ({
     type: EDIT_TASK,
-    payload: {idTask, value}
+    payload: { idTask, value }
 })
